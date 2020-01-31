@@ -1,0 +1,19 @@
+# Meta configuration - defines which sources to load
+sources:
+  - type: "system-properties"
+  - type: "environment-variables"
+  - type: "file"
+    properties:
+      optional: true
+      # used to override security configuration
+      path: "config-security.yaml"
+  - type: "file"
+    properties:
+      optional: true
+      # used to override application configuration
+      path: "config-app.yaml"
+  - type: "classpath"
+    properties:
+      # configuration defaults
+      resource: "META-INF/microprofile-config.properties"
+
