@@ -1,6 +1,8 @@
 # helidon-mp-native
-Prerequisite:
-This example depends on Helidon 2.0 SNAPSHOT. You need to first locally install Helidon project.
+Prerequisites:
+
+- This example requires Java 11
+- If you want to run GraalVM native image, you need to install version 19.3.1 
 
 ## Build and run Java application
 To build:
